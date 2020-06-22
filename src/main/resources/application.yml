@@ -1,0 +1,17 @@
+info:
+  app:
+    name: Spotify Poc
+    description: Spotify Poc
+
+security:
+  oauth2:
+    client:
+      clientId: <my-client-id>
+      clientSecret: <my-client-secret>
+      accessTokenUri: https://accounts.spotify.com/api/token
+      userAuthorizationUri: https://accounts.spotify.com/authorize
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+      scope: user-read-private, user-read-email
+    resource:
+      userInfoUri: https://api.spotify.com/v1/me
